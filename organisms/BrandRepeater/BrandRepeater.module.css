@@ -1,0 +1,31 @@
+.BrandRepeater {
+  @apply text-center sm:text-left mb-24 sm:mb-0 md:grid grid-rows-2 grid-flow-col gap-12 border-b-2 border-primary relative;
+
+  & .media {
+    @apply m-auto sm:m-0 row-span-2 md:w-80;
+  }
+
+  & .caption {
+    @apply hidden sm:block text-xs text-black;
+  }
+
+  & .imageWrap {
+    @apply relative h-36 w-full mb-8 md:mb-0;
+  }
+
+  & .content {
+    @apply row-span-3 col-span-3;
+  }
+
+  & .link {
+    @apply bg-primary text-white text-sm font-bold py-2 px-4 rounded-full;
+
+    &:hover {
+      @apply bg-white text-primary border-2 border-primary;
+    }
+  }
+
+  & img {
+    object-fit: contain;
+  }
+}
